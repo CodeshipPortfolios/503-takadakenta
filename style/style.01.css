@@ -1,200 +1,197 @@
-body{
-    overflow: scroll;
+body {
+  overflow: scroll;
 }
 
-.container{
-    width: 100%;
-    padding: 0%;
-    font-family: 'IBM Plex Serif', serif;
+.container {
+  width: 100%;
+  padding: 0%;
+  font-family: "IBM Plex Serif", serif;
 }
 
-.navbar-brand{
-    font-family: 'Ubuntu', sans-serif;
-
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
 }
 
-.navbar{
-    background-color: crimson;
+.navbar {
+  background-color: crimson;
 }
 
-.title{
-    width: 100%;
-    height: 500px;
-    background-image: url(cat.3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #eee;
-    /*****/
-    display: flex;
-    align-items: center;
-    justify-content:center;
+.title {
+  width: 100%;
+  height: 500px;
+  background-image: url(../media/cat.3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #eee;
+  /*****/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.content {
+  max-width: 80rem;
+}
+
+.header {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid #eee;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.row {
+  margin: 0%;
+}
+
+.title-font {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.font {
+  font-size: 1.5rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid #eee;
+}
+
+.post-text {
+  padding-left: 1.5rem;
+  width: 570px;
+  height: 225px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.post-font {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.text {
+  color: gray;
+  margin: 0%;
+}
+
+.photo {
+  border: 3px solid #292b2c;
+  border-radius: 0.5rem;
+}
+
+.sidebar {
+  font-size: 1.25rem;
+}
+
+.sidebar-title {
+  padding-bottom: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: crimson;
+}
+
+.icon {
+  margin-bottom: 1rem;
+  border: 1px solid #292b2c;
+}
+
+.footer {
+  background-color: crimson;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  color: #eee;
+  /******/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer a {
+  color: #eee;
+}
+
+.txt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 12px;
+}
+
+.post a {
+  text-decoration: none;
+  color: crimson;
+}
+
+small p {
+  margin: 0;
+}
+
+.title-font:first-letter {
+  color: crimson;
+}
+
+.header-title::first-letter {
+  color: crimson;
+}
+
+.sidebar-title::first-letter {
+  color: crimson;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .title {
+    text-align: center;
+  }
+  .font {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .header {
+    margin-left: 1.5rem;
+    margin-right: 1.5em;
+  }
+  .photo {
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  }
+  .post {
     flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.content{
-    max-width: 80rem;
-}
-
-.header{
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    border-bottom: 0.5px solid #eee;
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-
-.row{
-    margin: 0%;
-}
-
-.title-font{
-    font-size: 4rem;
-    padding-bottom: 1rem;
-}
-
-.font{
-    font-size: 1.5rem;
-}
-
-.post{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 0.5px solid #eee;
-}
-
-.post-text{
-    padding-left: 1.5rem;
-    width: 570px;
-    height: 225px;
+  }
+  .post-text {
+    height: auto;
+    width: auto;
     word-wrap: break-word;
     overflow: hidden;
-}
-
-.post-font{
-    font-size: 1.5rem;
-    color: black;
-}
-
-.text{
-    color: gray;
+    padding: 0%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .sidebar {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .sidebar-title {
+    margin-left: 2rem;
+  }
+  .icon {
+    margin-bottom: 2rem;
+  }
+  .col-sm-3.offset-sm-1.col-12 {
     margin: 0%;
-}
-
-.photo{
-    border: 3px solid #292b2c;
-    border-radius: 0.5rem;
-}
-
-.sidebar{
-    font-size: 1.25rem;
-}
-
-.sidebar-title{
-    padding-bottom: 1rem;
-}
-
-.sidebar a{
-    text-decoration: none;
-    color: crimson;
-}
-
-.icon{
-    margin-bottom: 1rem;
-    border: 1px solid #292b2c;
-
-}
-
-.footer{
-    background-color: crimson;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    text-align: center;
-    color: #eee;
-    /******/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer a{
-    color: #eee;
-    
-}
-
-.txt{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    font-size: 12px;
-}
-
-.post a{
-    text-decoration: none;
-    color: crimson;
-}
-
-small p{
-    margin: 0;
-}
-
-.title-font:first-letter{
-    color: crimson;
-}
-
-.header-title::first-letter{
-    color: crimson;
-}
-
-.sidebar-title::first-letter{
-    color: crimson;
-}
-
-@media(min-width: 320px) and ( max-width:1024px){
-    .title{
-        text-align: center;
-    }
-    .font{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .header{
-        margin-left: 1.5rem;
-        margin-right: 1.5em;
-    }
-    .photo{
-        margin-bottom: 2rem;
-        margin-left: 1.5rem;
-    }
-    .post{
-        flex-direction: column;
-    }
-    .post-text{
-        height: auto;
-        width: auto;
-        word-wrap: break-word;
-        overflow: hidden;
-        padding: 0%;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-    .sidebar{
-        margin-bottom: 2rem;
-        margin-left: 2rem;
-        margin-right: 1rem;
-    }
-    .sidebar-title{
-        margin-left: 2rem;
-    }
-    .icon{
-        margin-bottom: 2rem;
-    }
-    .col-sm-3.offset-sm-1.col-12{
-        margin: 0%;
-    }
+  }
 }
