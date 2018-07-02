@@ -1,0 +1,122 @@
+body{
+    overflow: scroll;
+}
+
+h2{
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+
+.container{
+    width: 100%;
+    padding: 0%;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.navbar{
+    background-color: crimson;
+}
+
+.content{
+    max-width: 80rem;
+}
+
+.header{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid #eee;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.title-font{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.post{
+    margin-bottom: 2rem;
+}
+
+.post-font{
+    font-size: 1.5rem;
+}
+
+.post.content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon{
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    border: 1px solid #292b2c;
+}
+
+td{
+    font-size: 1.5rem;
+}
+
+.footer{
+    background-color: crimson;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: #eee;
+    /******/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer a{
+    color: #eee;
+}
+
+.txt{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+img{
+    background-size: cover;
+}
+
+small p{
+    margin: 0;
+}
+
+.sidebar-title::first-letter{
+    color: crimson;
+}
+
+@media(min-width: 320px) and ( max-width:1024px){
+    .icon{
+        width: 290px;
+        height: 170px;
+        margin: 0%;
+    }
+    .post{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .post.content{
+        padding: 0%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    h2{
+        padding: 0%;
+    }
+}

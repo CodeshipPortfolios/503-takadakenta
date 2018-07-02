@@ -1,0 +1,153 @@
+body{
+    overflow: scroll;
+}
+
+.container{
+    width: 100%;
+    padding: 0%;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.navbar{
+    background-color: crimson;
+}
+
+.content{
+    max-width: 80rem;
+}
+
+.header{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid #eee;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.row{
+    margin: 0%;
+    margin-bottom: 2rem;
+    border-bottom: 0.5px solid #eee;
+}
+
+.title-font{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.font{
+    font-size: 1.5rem;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.post-text{
+    padding-left: 1rem;
+    word-wrap: break-word;
+}
+
+.post-font{
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    color: gray;
+}
+
+.photo{
+    border: 3px solid #292b2c;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar{
+    font-size: 1.25rem;
+}
+
+.sidebar-title{
+    padding-bottom: 1rem;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.icon{
+    margin-bottom: 1rem;
+    border: 1px solid #292b2c;
+}
+
+.footer{
+    background-color: crimson;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: #eee;
+    /******/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer a{
+    color: #eee;
+}
+
+.txt{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+img{
+    background-size: cover;
+}
+
+small p{
+    margin: 0;
+}
+
+.sidebar-title::first-letter{
+    color: crimson;
+}
+
+@media(min-width: 320px) and ( max-width:1024px){
+    .post-text{
+        padding: 0%;
+    }
+    .photo{
+        width: 300px;
+        height: 300px;
+    } 
+    .sidebar{
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    .sidebar-title{
+        margin-left: 2rem;
+    }
+    .icon{
+        margin-bottom: 2rem;
+    }
+    .col-sm-3.offset-sm-1.col-12{
+        margin: 0%;
+    }
+}
+
